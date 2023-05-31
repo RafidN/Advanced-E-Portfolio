@@ -66,7 +66,7 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  border-color: #f06449;
+  border-color: #610cff;
 }
 
 .container {
@@ -101,7 +101,7 @@ textarea:focus {
 }
 
 .secondary {
-  color: #f06449 !important;
+  color: #610cff !important;
 }
 
 .link__hover-effect {
@@ -208,7 +208,7 @@ nav,
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: #610cff;
   color: white;
   padding: 6px;
   width: 32px;
@@ -415,8 +415,9 @@ nav {
 }
 
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: #610cff;
+  border: 2px solid #610cff;
+  border-radius: 12px;
   color: white;
   font-weight: 700;
   width: 100%;
@@ -432,8 +433,8 @@ nav {
 }
 
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: #610cff;
+  color: #610cff;
 }
 
 .modal__overlay {
@@ -588,6 +589,25 @@ footer {
 
 .footer__logo--img {
   width: 70px;
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: white;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__anchor {
+    position: relative;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
 }
 
 .footer__social--list {
