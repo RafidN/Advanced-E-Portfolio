@@ -244,10 +244,10 @@ nav,
 }
 
 .scroll__icon {
-  width: 20px;
-  height: 30px;
+  width: 24px;
+  height: 40px;
   border: 2px solid #242424;
-  border-radius: 24px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,10 +264,10 @@ nav,
 
 @keyframes scroll {
   0% {
-    transform: translateY(3px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
 }
 
@@ -494,9 +494,11 @@ nav {
 /* PROJECTS  */
 
 .section__title {
+  position: relative;
   text-align: center;
   font-size: 48px;
   margin-bottom: 60px;
+  z-index: 2;
 }
 
 .project {
@@ -504,6 +506,8 @@ nav {
 }
 
 .project__img {
+  position: relative;
+  transform: scale(1.07);
   width: 100%;
   transition: all 600ms ease;
 }
@@ -522,7 +526,7 @@ nav {
 }
 
 .project__wrapper:hover .project__img {
-  transform: scale(1.07);
+  transform: scale(1.14);
   filter: blur(5px);
 }
 
@@ -636,7 +640,7 @@ footer {
 
 .shape {
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   opacity: 0.5;
 }
 
@@ -691,7 +695,7 @@ footer {
 
 @media (max-width: 768px) {
   .title {
-    font-size: 52px;
+    font-size: 80px;
   }
   .header__para {
     font-size: 20px;
@@ -709,6 +713,10 @@ footer {
 
   .modal__half {
     width: 100%;
+  }
+
+  .shape {
+    visibility: hidden;
   }
 }
 
